@@ -8,9 +8,13 @@ import HomeFooter from 'components/HomeFooter';
 import Header from '../../components/Header';
 
 import './index.scss';
+
+
 function HomePage() {
 
+  
   const FadeInLeft = ({ children }) => (
+    
     <Tween
       from={{ opacity: 0, transform: 'translate3d(-100vw, 0, 0)' }}
       ease="back.out(1.4)"

@@ -34,6 +34,7 @@ import './index.scss';
 
 import ThemeContextWrapper from './components/ThemeWrapper/ThemeWrapper';
 import BackgroundColorWrapper from './components/BackgroundColorWrapper/BackgroundColorWrapper';
+import WalletCard from 'views/WalletCard/WalletCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -47,6 +48,7 @@ root.render(
           <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
           <Route path="/login" render={() => <Login />} />
           <Route path="/register" render={() => <Register />} />
+          <Route path="/walletinfo" render={() => <WalletCard />} />
           <Redirect from="*" to="/home" />
         </Switch>
       </BrowserRouter>
